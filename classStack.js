@@ -34,7 +34,7 @@ class Stack{
 
        return rvrStr;
     }
-}
+} 
 
 let s1=new Stack();
 console.log(s1.reverseString('Saurabh'))
