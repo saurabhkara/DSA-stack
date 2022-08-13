@@ -70,3 +70,30 @@ function popStack(){
 function displayStack(){
     console.log(stackData);
 }
+
+
+
+let str='SAURABH';
+let stringStack=[];
+let strCurrentSize=stringStack.length;
+
+function stringPush(str){
+    let sStr=str.split('');
+    for(let i=0; i<sStr.length;i++){
+        stringStack[i]=sStr[i];
+        strCurrentSize++;
+    }
+
+}
+// stringPush(str); 
+
+function stringPop(){
+    let popData=''
+    for(let i=0;i<stringStack.length;i++){
+        popData=popData+stringStack[strCurrentSize-1]
+        strCurrentSize--;
+    }
+    return popData;
+}
+
+// console.log(stringPop());
